@@ -1,5 +1,7 @@
 package com.maxwell;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,6 +17,8 @@ public class Main {
         If user is correct the output will show “You are correct!”
         The program will then say “Good Bye!” and terminate.*/
 
+        //Create Scanner
+
         //Display Welcome Msg
         System.out.println("Welcome to the Division Quiz Program");
 
@@ -23,6 +27,16 @@ public class Main {
 
         //Display reminder txt
         System.out.println("Please note: You may need to round your answer if using integers and only two decimal places");
+
+        //Randomize two numbers
+        int number1 = (int)(Math.random() * 100);
+        int number2 = (int)(Math.random() * 25);
+            System.out.println("Your first number is: " + number1);
+            System.out.println("Your second number is: " + number2);
+
+
+
+
 
     }
 }
