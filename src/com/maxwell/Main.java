@@ -14,16 +14,15 @@ public class Main {
         System.out.println("This program will generate a division quiz with random numbers");
         System.out.println("Please note: You may need to round your answer if using integers and only two decimal places");
 
-        //Randomize two numbers w 2 Decimal and NO ZERo
-
+        //Randomize two numbers w 2 Decimal and DEALING WITH ZERO
         double number1 = (double) (Math.random() * 100);
             if (number1 == 0) {
                 System.out.println("The universe imploded... generating non-zero number"); }
-                else {}
+                    else {}
         Double number2 = (double) (Math.random() * 25);
-        if (number2 == 0) {
-            System.out.println("The universe imploded... generating non-zero number");}
-        else {}
+            if (number2 == 0) {
+                System.out.println("The universe imploded... generating non-zero number");}
+                    else {}
 
         //Format those bad boys
         NumberFormat numberFormat = NumberFormat.getInstance(Locale.US);
