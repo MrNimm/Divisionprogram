@@ -36,13 +36,23 @@ public class Main {
         //Format those bad boys
         NumberFormat numberFormat = NumberFormat.getInstance(Locale.US);
         DecimalFormat decimalFormat = (DecimalFormat)numberFormat;
-        decimalFormat.applyPattern("00.##");
+        decimalFormat.applyPattern("000.##");
 
         //Ensure numbers are generated
+        System.out.println("Numbers generated: ");
         System.out.println(decimalFormat.format(number1));
         System.out.println(decimalFormat.format(number2));
 
+        //Ensure No zero is given
+        if (number1 == 0) {
+            System.out.println("The universe imploded... generating non-zero number");
+        }
+        if (number2 == 0) {
+            System.out.println("The universe imploded... generating non-zero number");
+        }
+
         //Divide the smaller into the larger
+
            
 
 
