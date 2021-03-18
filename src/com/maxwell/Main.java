@@ -3,8 +3,8 @@ package com.maxwell;
 public class Main {
 
     public static void main(String[] args) {
-    /*  The program starts by displaying “Welcome to the Division Quiz Program”.
-        Your code then outputs the purpose of the program (To generate a random division quiz question)
+
+    /*          Your code then outputs the purpose of the program (To generate a random division quiz question)
         Remind users they may need to round their answer if using integers and only two decimal places.
         The Program will randomize two numbers.
         Generated large random number is 0-100 and smaller random number is 0-25.
@@ -16,5 +16,8 @@ public class Main {
         Program will inform the user if their answer was correct or not and display the full problem and answer if they are incorrect.
         If user is correct the output will show “You are correct!”
         The program will then say “Good Bye!” and terminate.*/
+
+        //Display Welcome Msg
+        System.out.println("Welcome to the Division Quiz Program");
     }
 }
