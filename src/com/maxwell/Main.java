@@ -4,9 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-    /*          Your code then outputs the purpose of the program (To generate a random division quiz question)
-        Remind users they may need to round their answer if using integers and only two decimal places.
-        The Program will randomize two numbers.
+    /*  The Program will randomize two numbers.
         Generated large random number is 0-100 and smaller random number is 0-25.
         Program output must not exceed two decimal places.
         Program will divide the smallest random number into the largest random number for an answer.
@@ -19,5 +17,12 @@ public class Main {
 
         //Display Welcome Msg
         System.out.println("Welcome to the Division Quiz Program");
+
+        //Display Program Purpose
+        System.out.println("This program will generate a division quiz with random numbers");
+
+        //Display reminder txt
+        System.out.println("Please note: You may need to round your answer if using integers and only two decimal places");
+
     }
 }
