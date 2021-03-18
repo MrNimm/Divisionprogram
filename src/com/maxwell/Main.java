@@ -1,14 +1,15 @@
 package com.maxwell;
 
-import java.util.Scanner;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
+
 
 public class Main {
 
     public static void main(String[] args) {
 
-    /*  The Program will randomize two numbers.
-        Generated large random number is 0-100 and smaller random number is 0-25.
-        Program output must not exceed two decimal places.
+    /*  Program output must not exceed two decimal places.
         Program will divide the smallest random number into the largest random number for an answer.
         Divide by zero is of course not allowed and checked for if necessary.
         Program will show the user the question with small and large random numbers previously generated.
@@ -28,11 +29,23 @@ public class Main {
         //Display reminder txt
         System.out.println("Please note: You may need to round your answer if using integers and only two decimal places");
 
-        //Randomize two numbers
-        int number1 = (int)(Math.random() * 100);
-        int number2 = (int)(Math.random() * 25);
-            System.out.println("Your first number is: " + number1);
-            System.out.println("Your second number is: " + number2);
+        //Randomize two numbers w 2 Decimal
+        double number1 = (double) (Math.random() * 100);
+        Double number2 = (double)(Math.random() * 25);
+
+        //Format those bad boys
+        NumberFormat numberFormat = NumberFormat.getInstance(Locale.US);
+        DecimalFormat decimalFormat = (DecimalFormat)numberFormat;
+        decimalFormat.applyPattern("00.##");
+
+        //Ensure numbers are generated
+        System.out.println(decimalFormat.format(number1));
+        System.out.println(decimalFormat.format(number2));
+
+        //Divide the smaller into the larger
+           
+
+
 
 
 
